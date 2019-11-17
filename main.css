@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+header {
+    background: #f7f7f7;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    padding: 1em;
+}
+
+h3 {
+    background: white;
+    padding: 10px;
+    margin: 0 auto 6px;
+    width: 92%;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    width: 65%;
+    margin-top: 3em;
+}
+
+p {
+    padding: 2em 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 200;
+}
