@@ -4,6 +4,10 @@
     font-family: 'Public Sans', sans-serif;
 }
 
+#body-wrapper {
+    min-width: 320px;
+}
+
 header {
     background: #f7f7f7;
     text-align: center;
@@ -21,7 +25,7 @@ h3 {
     width: 92%;
 }
 
-h3 a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -36,4 +40,41 @@ p {
     line-height: 1.5;
     text-align: justify;
     font-weight: 200;
+}
+
+#main {
+    text-align: center;
+}
+
+#main h2 {
+    margin-top: 40px;
+}
+
+#main p {
+    width: 80%;
+    margin: auto;
+}
+
+.main-imgs {
+    width: 90%;
+}
+
+footer, 
+footer h3,
+footer p {
+    background: #f7f7f7;
+    text-align: center;
+}
+
+hr {
+    width: 87%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2em auto;
+    padding-bottom: 2em;
 }
