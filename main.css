@@ -38,12 +38,15 @@ a {
 p {
     padding: 2em 1.5em;
     line-height: 1.5;
-    text-align: justify;
     font-weight: 200;
 }
 
 #main {
     text-align: center;
+}
+
+#main h3 {
+    padding: 2.5em 0;
 }
 
 #main h2 {
@@ -66,6 +69,10 @@ footer p {
     text-align: center;
 }
 
+footer h3 {
+    padding-top: 3em;
+}
+
 hr {
     width: 87%;
     margin: auto;
@@ -77,4 +84,42 @@ hr {
     width: 90%;
     margin: 2em auto;
     padding-bottom: 2em;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    header {
+        height: 60vh;
+    }
+    
+    .pair {
+        display: flex;
+    }
+
+    .profile {
+        display: inline-block;
+        width: 38%;
+        height: 40%; 
+        margin-right: 10px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    header h3 {
+        background: none;
+        display: inline;
+        margin-right: 15px;
+    }
+
+    header p {
+        width: 58%; 
+        float: left;
+        text-align: left;       
+    }
 }
