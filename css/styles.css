@@ -3,6 +3,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
     font-family: 'Public Sans', sans-serif;
 }
 
@@ -36,7 +39,6 @@ a {
 }
 
 a:hover {
-    zoom: 1.05;
     color: rgb(105, 178, 226);
 }
 
@@ -61,7 +63,7 @@ p {
 }
 
 #main h2 {
-    margin-top: 40px;
+    margin-top: 2em;
 }
 
 #main p {
@@ -94,7 +96,7 @@ hr {
     margin: auto;
 }
 
-.flex {
+.footer-info {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -102,9 +104,13 @@ hr {
     padding-bottom: 2em;
 }
 
+.footer-nav {
+    display: none;
+}
+
 /* ********* MEDIA QUERIES ********* */
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
     
     header {
         height: 60vh;
@@ -130,16 +136,21 @@ hr {
     }
 
     #main {
-        background: rgb(253, 197, 197);
         padding-bottom: 2em;
     }
 
     #main h3 {
+        background: rgb(253, 197, 197);  
+    }
+
+    #block-container {
+        display: flex;
+        flex-wrap: wrap;
         background: rgb(253, 197, 197);
     }
     
-    .pair {
-            display: flex;
+    .block {
+        width: 50%;
     }
 
     .clearfix::after {
@@ -148,6 +159,17 @@ hr {
         display: table;
     }
 
+    .toTop {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+
+    .footer-nav h4 {
+        margin-right: 10px;
+    }
     
 }
 
@@ -168,6 +190,13 @@ hr {
         height: 60vh;
     }
     
+    .profile {
+        display: inline-block;
+        width: 38%;
+        height: 40%; 
+        margin-right: 10px;
+    }
+    
     .clearfix::after {
         content: "";
         clear: both;
@@ -185,31 +214,40 @@ hr {
         float: left;
         text-align: left;       
     }
-    
+       
     #main {
-        background: rgb(102, 130, 172);
         width: 95%;
         margin: auto;
         padding-bottom: 2em;
     }
 
     #main h3 {
-        background: rgb(102, 130, 172);;
+        background: rgb(102, 130, 172);
         color: white;
     }
 
     #block-container {
         display: flex;
+        background: rgb(102, 130, 172);
     }
 
     #block-container p {
         color: white;
     }
 
-    .profile {
-        display: inline-block;
-        width: 38%;
-        height: 40%; 
+    .block {
+        width: 33%;
+    }
+    
+    .toTop {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+
+    .footer-nav h4 {
         margin-right: 10px;
     }
 
