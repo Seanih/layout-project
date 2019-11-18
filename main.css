@@ -6,6 +6,9 @@
 
 #body-wrapper {
     min-width: 320px;
+    max-width: 1200px;
+    background: #f7f7f7;
+    margin: auto;
 }
 
 header {
@@ -37,12 +40,13 @@ a {
 
 p {
     padding: 2em 1.5em;
-    line-height: 1.5;
+    line-height: 1.4;
     font-weight: 200;
 }
 
 #main {
     text-align: center;
+    background: white;
 }
 
 #main h3 {
@@ -54,7 +58,6 @@ p {
 }
 
 #main p {
-    width: 80%;
     margin: auto;
 }
 
@@ -94,23 +97,6 @@ hr {
         height: 60vh;
     }
     
-    .pair {
-        display: flex;
-    }
-
-    .profile {
-        display: inline-block;
-        width: 38%;
-        height: 40%; 
-        margin-right: 10px;
-    }
-
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
     header h3 {
         background: none;
         display: inline;
@@ -122,4 +108,81 @@ hr {
         float: left;
         text-align: left;       
     }
+
+    .profile {
+        display: inline-block;
+        width: 38%;
+        height: 40%; 
+        margin-right: 10px;
+    }
+
+    #main {
+        background: white;
+    }
+    
+    .pair {
+            display: flex;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+       
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    header {
+        height: 60vh;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    header h3 {
+        background: none;
+        display: inline-block;
+        margin-right: 15px;
+     }
+
+    header p {
+        width: 58%; 
+        float: left;
+        text-align: left;       
+    }
+    
+    #main {
+        background: white;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 2em;
+    }
+
+    #block-container {
+        display: flex;
+    }
+
+    .profile {
+        display: inline-block;
+        width: 38%;
+        height: 40%; 
+        margin-right: 10px;
+    }
+
 }
