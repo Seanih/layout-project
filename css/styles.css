@@ -1,3 +1,5 @@
+/* ******** DEFAULT STYLES ********* */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,6 +35,11 @@ a {
     color: black;
 }
 
+a:hover {
+    zoom: 1.05;
+    color: rgb(105, 178, 226);
+}
+
 .profile {
     width: 65%;
     margin-top: 3em;
@@ -63,6 +70,12 @@ p {
 
 .main-imgs {
     width: 90%;
+}
+
+aside {
+    background-image: linear-gradient(gray, lightblue, rgba(30, 26, 241, 0));
+    width: 50%;
+    margin: auto;
 }
 
 footer, 
@@ -117,7 +130,12 @@ hr {
     }
 
     #main {
-        background: white;
+        background: rgb(253, 197, 197);
+        padding-bottom: 2em;
+    }
+
+    #main h3 {
+        background: rgb(253, 197, 197);
     }
     
     .pair {
@@ -143,6 +161,7 @@ hr {
 
     nav {
         display: flex;
+        margin-right: 8px;
     }
 
     header {
@@ -168,14 +187,23 @@ hr {
     }
     
     #main {
-        background: white;
+        background: rgb(102, 130, 172);
         width: 95%;
         margin: auto;
         padding-bottom: 2em;
     }
 
+    #main h3 {
+        background: rgb(102, 130, 172);;
+        color: white;
+    }
+
     #block-container {
         display: flex;
+    }
+
+    #block-container p {
+        color: white;
     }
 
     .profile {
